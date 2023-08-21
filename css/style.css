@@ -65,6 +65,12 @@ nav a:hover {
     border-top: 2px solid #371fb0; /* Remplacez la couleur par celle de votre choix */
 
 }
+nav a:focus{
+
+}
+nav a:visited {
+
+}
 
 /* ----- sectionn info ------ */
 .section-info{
@@ -119,7 +125,6 @@ nav a:hover {
 .input-container {
     display: flex;
     height: 49px;
-    gap: 10px;
     align-items: center;
     flex: 1;
 }
@@ -205,10 +210,16 @@ nav a:hover {
     box-sizing: border-box;
 }
 
+/****** Hebergements ****/
 .hebergements {
     width: 65%;
 }
-
+.hebergements-title {
+    display: flex;
+    margin-top:0px;
+    justify-content: space-between;
+    align-items: center;
+}
 .hebergements-row-content {
     display: flex;
     flex-wrap: wrap;
@@ -229,11 +240,7 @@ nav a:hover {
     border: 5px solid var(--white, #FFF);
 }
 
-.populaires {
-    width: 32%;
-}
-
-/****** Populaires ***********/
+/* ***** Populaires ********* **/
 .populaires {
     width: 32%;
 }
@@ -277,6 +284,58 @@ nav a:hover {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+/* ************************** Actitivée ***************************/
+.activites {
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+}
+.activites-title {
+    height: 30.00px;
+    align-self: stretch;
+    color: #000;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.activites-card-row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+}
+.activites-card {
+    display: flex;
+    width: 23%;
+    height: 439px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 20px;
+
+/* Shadow/Card */
+box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+}
+.activites-card img {
+    height: 380px;
+    flex-shrink: 1 0 0 0;
+    align-self: stretch;
+}
+
+.activites .card h2 {
+
+}
+
+/* card */
+
 .card {
     background-color: white;
     border-radius: 20px;
@@ -300,7 +359,23 @@ nav a:hover {
     color: var(--main-bg-color)
 }
 
+/* footer */
+footer {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    background: var(--grey, #F2F2F2);
+}
+.ls-row-content{
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    flex-direction: row;
+}
+.ls-link{
+    justify-content: space-between;
 
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
