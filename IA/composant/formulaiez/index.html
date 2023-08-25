@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulaire d'Inscription</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Formulaire d'Inscription</h2>
+    <form id="registration-form">
+      <label for="prenom">Prénom:</label>
+      <input type="text" id="prenom" name="prenom" required>
+      <label for="nom">Nom:</label>
+      <input type="text" id="nom" name="nom" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="motdepasse">Mot de passe:</label>
+      <input type="password" id="motdepasse" name="motdepasse" required>
+      <label for="datenaissance">Date de naissance:</label>
+      <input type="date" id="datenaissance" name="datenaissance" required>
+      <section><p>Sexe:</p>
+      <input type="radio" id="masculin" name="sexe" value="masculin"> Masculin
+      <input type="radio" id="feminin" name="sexe" value="feminin"> Féminin
+      </section>
+      <button type="button" id="annuler">Annuler</button>
+      <button type="submit">Soumettre</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
