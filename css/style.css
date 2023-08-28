@@ -32,6 +32,7 @@ body {
 }
 
 /****** header ***********/
+
 header {
     display: flex;
     align-items: flex-start;
@@ -61,7 +62,6 @@ nav a {
 }
 nav a:focus {
     color: #000;
-    border-top: 2px solid #000; 
     padding-top: 5px;
 }
 nav a:active{
@@ -69,8 +69,7 @@ nav a:active{
     padding-top: 5px;
 }
 nav a:visited {
-    color: #0065FC;
-    border-top: 2px solid #0065FC; 
+    color: #000000;
     padding-top: 5px;
 }
 nav a:hover {
@@ -179,7 +178,13 @@ nav a:hover {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-bottom: 35px;
 }
+
+.buttom-icon {
+    margin:10px;
+}
+
 
 .card {
     background-color: white;
@@ -221,6 +226,7 @@ nav a:hover {
 /****** Hebergements ****/
 .hebergements {
     width: 65%;
+    padding-bottom: 0px;
 }
 .hebergements-title {
     display: flex;
@@ -231,7 +237,6 @@ nav a:hover {
 .hebergements-row-content {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 30px;
     gap: 30px; 
 }
 
@@ -256,15 +261,15 @@ nav a:hover {
 
 }
 .hebergements-cards h3 {
-    margin: 0px;
+    padding-bottom: 0px;
 
 }
 .hebergements-cards p{
     color: #000;
 }
-.hebergements-row-content .Afficher-plus {
-    margin: 0px;
-    padding:0px;
+.Afficher-plus {
+    justify-content: space-between;
+    margin: 20px 0px 0px 0px;
 }
 /* ***** Populaires ********* **/
 .populaires {
@@ -313,11 +318,8 @@ nav a:hover {
 /* ************************** Actitivée ***************************/
 .activites {
     display: flex;
-    padding: 30px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 30px;
-    align-self: stretch;
 }
 .activites-title {
     margin: 19px 20px;
@@ -329,19 +331,20 @@ nav a:hover {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
 }
 .activites-card-row{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 35px;
 }
 .activites-card {
     display: flex;
     width: 23%;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
     border-radius: 20px;
 
 /* Shadow/Card */
@@ -353,8 +356,16 @@ box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
     object-fit: cover;
 }
 
-.activites .card h2 {
-
+.activites-card-title {
+    height: 30.019px;
+    padding:20px;
+    align-items: start;
+    color:#000;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 /* card */
@@ -412,19 +423,71 @@ footer {
     align-items: flex-start;
     gap: 15px;
     flex: 1 0 0;
-    align-self: stretch;
     justify-content: space-between;
-}
-.ls-link a {
-    
-
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
+    
+    .main-container {
+        .main-container {
+            width: 100%;
+            max-width: 1024px;
+            padding: 35px 50px;
+            box-sizing: border-box;
+    }
+    /* Header */
+    header {
+        display: flex;
+        padding-right: 0px;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 518.601px;
+        align-self: stretch;
+    }
+    .logo {
+        margin-left: 0px;
+        width: 61.1px;
+        height: 19px;
+        margin : 30px;
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav li {
+        display: inline-block;
+        margin-left: 20px;
+    }
+    
+    nav a {
+        text-decoration: none;
+    
+    }
+    nav a:focus {
+        color: #000;
+        padding-top: 5px;
+    }
+    nav a:active{
+        color: #000;
+        padding-top: 5px;
+    }
+    nav a:visited {
+        color: #000000;
+        padding-top: 5px;
+    }
+    nav a:hover {
+        color: #0065FC;
+        border-top: 2px solid #0065FC; 
+        padding-top: 5px;
+    }
+    
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -460,4 +523,11 @@ footer {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+    .main-container {
+        .main-container {
+            width: 100%;
+            max-width: 768px;
+            padding: 35px 50px;
+            box-sizing: border-box;
+    }
 }
